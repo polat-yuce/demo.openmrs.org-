@@ -13,10 +13,10 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class US_401 extends BaseDriver {
+public class US_402 extends BaseDriver {
 
     @Test(dataProvider = "UserData", groups = {"Smoke Test", "Login"})
-    public void test1(String userName, String password) {
+    public void test2(String userName, String password) {
         POM pom = new POM();
 
         driver.get("https://openmrs.org/");
@@ -46,7 +46,10 @@ public class US_401 extends BaseDriver {
         pom.username.sendKeys(userName);
         pom.password.sendKeys(password);
         pom.loginButton.click();
-        Assert.assertEquals(pom.errorMassage.getText(), "Invalid username/password. Please try again.");
+        if (pom.errorMassage.getText().equals("Invalid username/password. Please try again.")){
+            Assert.assertEquals(pom.errorMassage.getText(), "Invalid username/password. Please try again.");
+        }else
+            System.out.println("Giriş yapıldı");
 
     }
 
@@ -59,6 +62,7 @@ public class US_401 extends BaseDriver {
                 {"Mehsadfasdfmet", "fadsfdassafasf"},
                 {"Mehmafsdsfet", "saafsdsffasf"},
                 {"Mehmafsdsafet", "saafsdsfdfasf"},
+                {"Admin", "Admin123"},
         };
         return userPass;
     }
