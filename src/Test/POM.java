@@ -46,4 +46,7 @@ public class POM {
 
     @FindBy(xpath = "//a[text()=' Turkish']")
     public WebElement Turkish;
+
+    @FindBy(xpath = "//li[@class='nav-item logout']/a")
+    public WebElement Logout;
 }

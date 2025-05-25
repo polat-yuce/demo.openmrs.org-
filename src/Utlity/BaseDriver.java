@@ -1,5 +1,6 @@
 package Utlity;
 
+import Test.POM;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -38,5 +39,33 @@ public class BaseDriver {
     public void KapanisIslemleri(){
         Tools.Bekle(3);
         driver.quit();
+    }
+
+    public void Login(){
+
+        POM pom = new POM();
+
+        driver.get("https://openmrs.org/");
+
+        if (driver.getCurrentUrl().equals("https://openmrs.org/tr/")) {
+            pom.demo.click();
+        } else {
+            pom.language.click();
+            pom.Turkish.click();
+            pom.demo.click();
+        }
+
+
+        js.executeScript("arguments[0].click();", pom.openmrs2);
+
+        wait.until(ExpectedConditions.elementToBeClickable(pom.openmrs2demo));
+        js.executeScript("arguments[0].click();", pom.openmrs2demo);
+
+        pom.InpatientWard.click();
+        pom.username.clear();
+        pom.password.clear();
+        pom.username.sendKeys("Admin");
+        pom.password.sendKeys("Admin123");
+        pom.loginButton.click();
     }
 }
