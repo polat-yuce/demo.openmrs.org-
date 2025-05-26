@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class POM {
 
     public POM() {
@@ -49,4 +51,66 @@ public class POM {
 
     @FindBy(xpath = "//li[@class='nav-item logout']/a")
     public WebElement Logout;
+
+    @FindBy(xpath = "//ul[@id='sessionLocation']/li")
+    public List<WebElement> locations;
+
+    @FindBy(xpath = "(//div[@id='apps']/a)[4]")
+    public WebElement RegisteraPatient;
+
+    @FindBy(css = "[name='givenName']")
+    public WebElement Given;
+
+    @FindBy(css = "[name='familyName']")
+    public WebElement Family;
+
+    @FindBy(id = "next-button")
+    public WebElement nextButton;
+
+   @FindBy(xpath = "//option[text()='Male']")
+   public WebElement Male;
+
+   @FindBy(id = "birthdateDay-field")
+    public WebElement Day;
+
+   @FindBy(css = "[id='birthdateMonth-field']")
+    public WebElement Month;
+
+    @FindBy(id = "birthdateYear-field")
+    public WebElement Year;
+
+    @FindBy(id = "address1")
+    public WebElement Address;
+
+    @FindBy(id = "cityVillage")
+    public WebElement cityVillage;
+
+    @FindBy(id = "stateProvince")
+    public WebElement stateProvince;
+
+    @FindBy(id = "country")
+    public WebElement country;
+
+    @FindBy(id = "postalCode")
+    public WebElement postalCode;
+
+    @FindBy(css = "[name='phoneNumber']")
+    public WebElement phoneNumber;
+
+    @FindBy(id = "relationship_type")
+    public WebElement relationship_type;
+
+    @FindBy(xpath = "(//p[@class='left']/input)[15]")
+    public WebElement PersonName;
+
+    @FindBy(id = "submit")
+    public WebElement submit;
+
+    @FindBy(css = "[class='PersonName-givenName']")
+    public WebElement personName;
+
+    @FindBy(xpath = "//div[@class='float-sm-right']/span")
+    public WebElement id;
+
+
 }

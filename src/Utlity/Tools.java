@@ -16,10 +16,8 @@ public class Tools {
             throw new RuntimeException(e);
         }
     }
-
-    public static void SuccessMessageValidation() {
-        WebElement msgLabel=BaseDriver.driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
-        Assert.assertTrue(msgLabel.getText().toLowerCase().contains("success"));
+    public static int randomGenerator(int sinir){
+        return (int)(Math.random()*sinir);
     }
 
 
