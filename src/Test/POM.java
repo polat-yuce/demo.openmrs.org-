@@ -136,6 +136,15 @@ public class POM {
     @FindBy(xpath = "//td[text()='No matching records found']")
     public WebElement NoMatchingRecordsFound;
 
+    @FindBy(xpath = "(//ul[@class='float-left']/li)[8]")
+    public WebElement deletePatient;
+
+    @FindBy(id = "delete-reason")
+    public WebElement reason;
+
+    @FindBy(xpath = "(//button[text()='Confirm'])[4]")
+    public WebElement confirm;
+
 
 
 

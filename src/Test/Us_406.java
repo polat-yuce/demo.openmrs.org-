@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 public class Us_406 extends BaseDriver {
 
-    @Test
+    @Test(groups = {"PatientManagement"})
     public void Test(){
         POM pom = new POM();
 
