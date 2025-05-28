@@ -23,25 +23,25 @@ public class BaseDriver {
 
 
     @BeforeClass
-    public void BaslangicIslemleri(){
-        driver=new ChromeDriver();
+    public void BaslangicIslemleri() {
+        driver = new ChromeDriver();
 
         driver.manage().window().maximize(); // Ekranı max yapıyor.
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30)); // 20 sn mühlet: sayfayı yükleme mühlet
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // 20 sn mühlet: elementi bulma mühleti
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-        js=(JavascriptExecutor)driver;
+        js = (JavascriptExecutor) driver;
 
 
     }
 
     @AfterClass
-    public void KapanisIslemleri(){
+    public void KapanisIslemleri() {
         Tools.Bekle(3);
         driver.quit();
     }
 
-    public void Login(){
+    public void Login() {
 
         POM pom = new POM();
 
@@ -69,7 +69,7 @@ public class BaseDriver {
         pom.loginButton.click();
     }
 
-    public void randomLocationLogin(){
+    public void randomLocationLogin() {
         POM pom = new POM();
 
         driver.get("https://openmrs.org/");

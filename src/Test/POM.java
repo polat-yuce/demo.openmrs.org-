@@ -124,6 +124,18 @@ public class POM {
     @FindBy(xpath = "(//div[@class='task'])[2]")
     public WebElement myLanguages;
 
+    @FindBy(xpath ="(//div[@id='apps']/a)[1]")
+    public WebElement FindPatientRecord;
+
+    @FindBy(css = "[id='patient-search']")
+    public WebElement search;
+
+    @FindBy(xpath = "//tr[@class='odd']/td")
+    public WebElement kisi;
+
+    @FindBy(xpath = "//td[text()='No matching records found']")
+    public WebElement NoMatchingRecordsFound;
+
 
 
 
