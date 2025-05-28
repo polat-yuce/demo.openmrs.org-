@@ -112,5 +112,22 @@ public class POM {
     @FindBy(xpath = "//div[@class='float-sm-right']/span")
     public WebElement id;
 
+    @FindBy(xpath = "(//li[@class='nav-item identifier']/i)[1]")
+    public WebElement profil;
+
+    @FindBy(xpath = "//ul[@id='user-account-menu']/li/a")
+    public WebElement myAccount;
+
+    @FindBy(xpath = "(//div[@class='task'])[1]")
+    public WebElement changePassword;
+
+    @FindBy(xpath = "(//div[@class='task'])[2]")
+    public WebElement myLanguages;
+
+
+
+
+
+
 
 }

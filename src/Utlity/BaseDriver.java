@@ -45,7 +45,7 @@ public class BaseDriver {
 
         POM pom = new POM();
 
-        driver.get("https://openmrs.org/");
+        driver.navigate().to("https://openmrs.org/");
 
         if (driver.getCurrentUrl().equals("https://openmrs.org/tr/")) {
             pom.demo.click();
@@ -64,6 +64,33 @@ public class BaseDriver {
         pom.InpatientWard.click();
         pom.username.clear();
         pom.password.clear();
+        pom.username.sendKeys("Admin");
+        pom.password.sendKeys("Admin123");
+        pom.loginButton.click();
+    }
+
+    public void randomLocationLogin(){
+        POM pom = new POM();
+
+        driver.get("https://openmrs.org/");
+
+        if (driver.getCurrentUrl().equals("https://openmrs.org/tr/")) {
+            pom.demo.click();
+        } else {
+            pom.language.click();
+            pom.Turkish.click();
+            pom.demo.click();
+        }
+
+        js.executeScript("arguments[0].click();", pom.openmrs2);
+        wait.until(ExpectedConditions.elementToBeClickable(pom.openmrs2demo));
+
+        js.executeScript("arguments[0].click();", pom.openmrs2demo);
+
+        int random = Tools.randomGenerator(pom.locations.size());
+        WebElement randomLocation = driver.findElement(By.xpath("(//ul[@id='sessionLocation']/li)[" + random + "]"));
+        randomLocation.click();
+
         pom.username.sendKeys("Admin");
         pom.password.sendKeys("Admin123");
         pom.loginButton.click();
