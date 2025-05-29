@@ -6,7 +6,9 @@ OpenMRS, açık kaynaklı bir elektronik sağlık kayıt (EHR) sistemidir. Sağl
 
 OpenMRS:
 ✅ Tıbbi kayıtları dijitalleştirir
+
 ✅ Hasta takibini ve tedavi planlamasını destekler
+
 ✅ Sağlık verilerinin analizini kolaylaştırır
 
 Bu proje, yazılım geliştiricileri, sağlık uzmanları ve gönüllülerden oluşan bir topluluk tarafından geliştirilir ve farklı kuruluşların ihtiyaçlarına uyarlanabilir.
