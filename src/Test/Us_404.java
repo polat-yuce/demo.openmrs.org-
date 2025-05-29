@@ -38,8 +38,8 @@ public class Us_404 extends BaseDriver {
         pom.password.sendKeys("Admin123");
         pom.loginButton.click();
         pom.RegisteraPatient.click();
-        pom.Given.sendKeys("MEMATI");
-        pom.Family.sendKeys("Cakır");
+        pom.Given.sendKeys("ali");
+        pom.Family.sendKeys("fda");
         pom.nextButton.click();
 
         pom.Male.click();
@@ -48,14 +48,14 @@ public class Us_404 extends BaseDriver {
         pom.Day.sendKeys("1");
         Select Month=new Select(pom.Month);
         Month.selectByVisibleText("March");
-        pom.Year.sendKeys("1999");
+        pom.Year.sendKeys("199");
         pom.nextButton.click();
 
-        pom.Address.sendKeys("msdlakfdas");
-        pom.cityVillage.sendKeys("afdfdas");
-        pom.stateProvince.sendKeys("dsmfaf");
-        pom.country.sendKeys("dfafsf");
-        pom.postalCode.sendKeys("1231");
+        pom.Address.sendKeys("msdlafkfdas");
+        pom.cityVillage.sendKeys("afdsfdas");
+        pom.stateProvince.sendKeys("dsfmfaf");
+        pom.country.sendKeys("dfaafsf");
+        pom.postalCode.sendKeys("13231");
         pom.nextButton.click();
 
         pom.phoneNumber.sendKeys("4321325125");

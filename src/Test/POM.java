@@ -145,11 +145,27 @@ public class POM {
     @FindBy(xpath = "(//button[text()='Confirm'])[4]")
     public WebElement confirm;
 
-    @FindBy(css = "//table[@id='patient-search-results-table']/tbody/tr")
-    public List<WebElement> satir;
-
     @FindBy(css = "[id='patient-search-results-table_info']")
     public WebElement satirSayisi;
 
+    @FindBy(xpath = "(//div[@id='apps']/a)[9]")
+    public WebElement dataManagement;
 
+    @FindBy(css = "[id='coreapps-mergePatientsHomepageLink-app']")
+    public WebElement marge;
+
+    @FindBy(css = "[id='patient1-text']")
+    public WebElement patient1;
+
+    @FindBy(css = "[id='patient2-text']")
+    public WebElement patient2;
+
+    @FindBy(id = "confirm-button")
+    public WebElement devamEt;
+
+    @FindBy(css = "[id='first-patient']")
+    public WebElement secilecekTaraf;
+
+    @FindBy(xpath = "//input[@id='confirm-button']")
+    public WebElement confirm2;
 }

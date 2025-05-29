@@ -6,8 +6,8 @@ import org.testng.annotations.Test;
 
 public class Us_408 extends BaseDriver {
 
-    @Test
-    public void Test(){
+    @Test(groups = {"Regression", "PatientManagement"})
+    public void Test() {
         POM pom = new POM();
 
         randomLocationLogin();
