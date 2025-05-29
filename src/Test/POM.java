@@ -13,7 +13,7 @@ public class POM {
         PageFactory.initElements(BaseDriver.driver, this);
     }
 
-    @FindBy(xpath="//a[text()='Gösteri']") //driver.findElement(By
+    @FindBy(xpath = "//a[text()='Gösteri']") //driver.findElement(By
     public WebElement demo;
 
     @FindBy(xpath = "(//span[@class='elementor-button-content-wrapper'])[2] ")
@@ -67,13 +67,13 @@ public class POM {
     @FindBy(id = "next-button")
     public WebElement nextButton;
 
-   @FindBy(xpath = "//option[text()='Male']")
-   public WebElement Male;
+    @FindBy(xpath = "//option[text()='Male']")
+    public WebElement Male;
 
-   @FindBy(id = "birthdateDay-field")
+    @FindBy(id = "birthdateDay-field")
     public WebElement Day;
 
-   @FindBy(css = "[id='birthdateMonth-field']")
+    @FindBy(css = "[id='birthdateMonth-field']")
     public WebElement Month;
 
     @FindBy(id = "birthdateYear-field")
@@ -124,7 +124,7 @@ public class POM {
     @FindBy(xpath = "(//div[@class='task'])[2]")
     public WebElement myLanguages;
 
-    @FindBy(xpath ="(//div[@id='apps']/a)[1]")
+    @FindBy(xpath = "(//div[@id='apps']/a)[1]")
     public WebElement FindPatientRecord;
 
     @FindBy(css = "[id='patient-search']")
@@ -145,10 +145,11 @@ public class POM {
     @FindBy(xpath = "(//button[text()='Confirm'])[4]")
     public WebElement confirm;
 
+    @FindBy(css = "//table[@id='patient-search-results-table']/tbody/tr")
+    public List<WebElement> satir;
 
-
-
-
+    @FindBy(css = "[id='patient-search-results-table_info']")
+    public WebElement satirSayisi;
 
 
 }
