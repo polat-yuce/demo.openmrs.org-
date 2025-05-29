@@ -16,15 +16,15 @@ Ana proje sitesi: https://openmrs.org
 
 📑 User Story Özet
 #	Kullanıcı Hikayesi
-1	Sisteme giriş hatalarını kontrol etmek
-2	Kullanıcı, uygulamaya giriş yapabilmeli
-3	Kullanıcı, sistemden güvenli bir şekilde çıkış yapabilmeli
-4	Kullanıcı, hasta bilgilerini girerek sisteme hasta kaydı yapabilmeli
-5	Kullanıcı, hesap ayarlarına (My Account) ulaşabilmeli
-6	Doktor, hastaları listeleyebilmeli ve belirli bir hastayı arayabilmeli
-7	Doktor, belirli bir hastayı sistemden silebilmeli
-8	Doktor, tüm hastaları listeleyebilmeli
-9	Hasta kayıtlarını birleştirebilmeli (Merge)
+-1	Sisteme giriş hatalarını kontrol etmek
+-2	Kullanıcı, uygulamaya giriş yapabilmeli
+-3	Kullanıcı, sistemden güvenli bir şekilde çıkış yapabilmeli
+-4	Kullanıcı, hasta bilgilerini girerek sisteme hasta kaydı yapabilmeli
+-5	Kullanıcı, hesap ayarlarına (My Account) ulaşabilmeli
+-6	Doktor, hastaları listeleyebilmeli ve belirli bir hastayı arayabilmeli
+-7	Doktor, belirli bir hastayı sistemden silebilmeli
+-8	Doktor, tüm hastaları listeleyebilmeli
+-9	Hasta kayıtlarını birleştirebilmeli (Merge)
 
 Gereksinimler:
 - org.apache.logging.log4j:log4j-api:2.20.0
