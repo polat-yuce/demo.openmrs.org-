@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="My Suit">
+    <test name="My Test 1">
+        <classes>
+            <class name="Test.US_401"></class>
+            <class name="Test.US_402"></class>
+            <class name="Test.Us_403"></class>
+            <class name="Test.Us_404"></class>
+            <class name="Test.Us_405"></class>
+            <class name="Test.Us_406"></class>
+            <class name="Test.US_407"></class>
+            <class name="Test.Us_408"></class>
+            <class name="Test.Us_409"></class>
+        </classes>
+    </test>
+</suite>
