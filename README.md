@@ -5,6 +5,7 @@ OpenMRS TR Sprint Test Otomasyon Projesi
 OpenMRS, açık kaynaklı bir elektronik sağlık kayıt (EHR) sistemidir. Sağlık hizmeti sunan kuruluşların hasta verilerini yönetmelerine, saklamalarına ve paylaşmalarına yardımcı olur. Özellikle düşük gelirli ülkelerde sağlık hizmetlerini iyileştirmek amacıyla tasarlanmıştır.
 
 OpenMRS:
+
 ✅ Tıbbi kayıtları dijitalleştirir
 
 ✅ Hasta takibini ve tedavi planlamasını destekler
