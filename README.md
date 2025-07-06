@@ -1,33 +1,44 @@
-OpenMRS TR Sprint Test Otomasyon Projesi
-📍 URL: OpenMRS Project
+# 🧪 OpenMRS TR Sprint Test Otomasyon Projesi
 
-📌 Proje Açıklaması
-OpenMRS, açık kaynaklı bir elektronik sağlık kayıt (EHR) sistemidir. Sağlık hizmeti sunan kuruluşların hasta verilerini yönetmelerine, saklamalarına ve paylaşmalarına yardımcı olur. Özellikle düşük gelirli ülkelerde sağlık hizmetlerini iyileştirmek amacıyla tasarlanmıştır.
+📍 **Test Ortamı:** [https://demo.openmrs.org](https://demo.openmrs.org)  
+🌐 **Ana Proje Sitesi:** [https://openmrs.org](https://openmrs.org)
 
-OpenMRS:
+---
 
-✅ Tıbbi kayıtları dijitalleştirir
+## 📌 Proje Açıklaması
 
-✅ Hasta takibini ve tedavi planlamasını destekler
+**OpenMRS**, açık kaynaklı bir elektronik sağlık kaydı (EHR) sistemidir. Sağlık hizmeti sunan kuruluşların hasta verilerini dijital olarak yönetmelerine, saklamalarına ve paylaşmalarına yardımcı olur. Özellikle düşük ve orta gelirli ülkelerde sağlık hizmetlerini iyileştirmek amacıyla geliştirilmiştir.
 
-✅ Sağlık verilerinin analizini kolaylaştırır
+**OpenMRS'in sundukları:**
 
-Bu proje, yazılım geliştiricileri, sağlık uzmanları ve gönüllülerden oluşan bir topluluk tarafından geliştirilir ve farklı kuruluşların ihtiyaçlarına uyarlanabilir.
+- ✅ Tıbbi kayıtların dijitalleştirilmesi  
+- ✅ Hasta takibi ve tedavi planlaması desteği  
+- ✅ Sağlık verilerinin analizinin kolaylaştırılması
 
-Test ortamı olarak kullanacağımız adres: https://demo.openmrs.org
-Ana proje sitesi: https://openmrs.org
+Bu proje, yazılım geliştiriciler, sağlık uzmanları ve gönüllülerden oluşan bir topluluk tarafından geliştirilmektedir ve farklı sağlık kuruluşlarının ihtiyaçlarına göre özelleştirilebilir yapıdadır.
 
-📑 User Story Özet
-#	Kullanıcı Hikayesi
-- 1	Sisteme giriş hatalarını kontrol etmek
-- 2	Kullanıcı, uygulamaya giriş yapabilmeli
-- 3	Kullanıcı, sistemden güvenli bir şekilde çıkış yapabilmeli
-- 4	Kullanıcı, hasta bilgilerini girerek sisteme hasta kaydı yapabilmeli
-- 5	Kullanıcı, hesap ayarlarına (My Account) ulaşabilmeli
-- 6	Doktor, hastaları listeleyebilmeli ve belirli bir hastayı arayabilmeli
-- 7	Doktor, belirli bir hastayı sistemden silebilmeli
-- 8	Doktor, tüm hastaları listeleyebilmeli
-- 9	Hasta kayıtlarını birleştirebilmeli (Merge)
+---
+
+## 🧪 Test Otomasyon Projesi Hedefi
+
+Bu proje, OpenMRS sistemine yönelik otomatik test senaryolarının yazılmasını ve test süreçlerinin hızlandırılmasını amaçlamaktadır.
+
+---
+
+## 📑 Kullanıcı Hikayeleri (User Stories)
+
+| #  | Kullanıcı Hikayesi |
+|----|---------------------|
+| 1  | Sisteme giriş hatalarını kontrol etmek |
+| 2  | Kullanıcı, uygulamaya giriş yapabilmeli |
+| 3  | Kullanıcı, sistemden güvenli bir şekilde çıkış yapabilmeli |
+| 4  | Kullanıcı, hasta bilgilerini girerek sisteme hasta kaydı yapabilmeli |
+| 5  | Kullanıcı, hesap ayarlarına (My Account) ulaşabilmeli |
+| 6  | Doktor, hastaları listeleyebilmeli ve belirli bir hastayı arayabilmeli |
+| 7  | Doktor, belirli bir hastayı sistemden silebilmeli |
+| 8  | Doktor, tüm hastaları listeleyebilmeli |
+| 9  | Hasta kayıtlarını birleştirebilmeli (Merge) |
+
 
 Gereksinimler:
 - org.apache.logging.log4j:log4j-api:2.20.0
